@@ -82,23 +82,20 @@ body {
   border-bottom: 2px solid #60a5fa;
 }
 
+/* -------------------- */
+/* HERO PRINCIPAL */
+/* -------------------- */
+
 .hero.apple-hero {
   background: linear-gradient(180deg, #f8fafc 0%, #eef2ff 100%);
   color: #0f172a;
-  padding: 100px 20px 90px;
+  padding: 110px 20px 90px;
+  text-align: center;
 }
 
-.hero-split-inner {
-  max-width: 1200px;
+.hero-inner {
+  max-width: 960px;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1.05fr 0.95fr;
-  align-items: center;
-  gap: 40px;
-}
-
-.hero-copy {
-  max-width: 620px;
 }
 
 .hero-eyebrow {
@@ -113,16 +110,16 @@ body {
 .hero.apple-hero h1 {
   margin: 0;
   font-size: clamp(2.8rem, 6vw, 5rem);
-  line-height: 1.02;
+  line-height: 1.04;
   letter-spacing: -0.04em;
   font-weight: 800;
   color: #0f172a;
 }
 
 .hero-subtext {
-  max-width: 620px;
-  margin: 24px 0 0 0;
-  font-size: 1.12rem;
+  max-width: 760px;
+  margin: 24px auto 0;
+  font-size: 1.14rem;
   line-height: 1.8;
   color: #334155;
 }
@@ -130,6 +127,7 @@ body {
 .hero-buttons {
   margin-top: 34px;
   display: flex;
+  justify-content: center;
   gap: 14px;
   flex-wrap: wrap;
 }
@@ -169,20 +167,9 @@ body {
   border-color: #94a3b8;
 }
 
-.hero-visual {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.hero-drone-image {
-  width: 100%;
-  max-width: 520px;
-  height: auto;
-  display: block;
-  filter: drop-shadow(0 24px 34px rgba(15, 23, 42, 0.18));
-  transform: translateY(10px);
-}
+/* -------------------- */
+/* PRODUCT HIGHLIGHT */
+/* -------------------- */
 
 .product-highlight {
   background: white;
@@ -373,6 +360,7 @@ main {
 .footer-links ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .footer-links a {
@@ -492,14 +480,8 @@ p {
     height: 40px;
   }
 
-  .hero-split-inner {
-    grid-template-columns: 1fr;
-    text-align: center;
-    gap: 30px;
-  }
-
-  .hero-copy {
-    max-width: 100%;
+  .hero.apple-hero {
+    padding: 90px 20px 70px;
   }
 
   .hero-subtext {
@@ -510,11 +492,6 @@ p {
 
   .hero-buttons {
     justify-content: center;
-  }
-
-  .hero-drone-image {
-    max-width: 420px;
-    transform: none;
   }
 
   .drone-showcase-inner {
