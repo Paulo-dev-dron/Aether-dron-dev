@@ -440,3 +440,37 @@ h1, h2, h3, h4 {
 p {
   line-height: 1.7;
 }
+
+/* -------------------- */
+/* DRONE SHOWCASE */
+/* -------------------- */
+
+.drone-showcase {
+  padding: 100px 20px;
+  background: #f8fafc;
+}
+
+.drone-showcase-inner {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 50px;
+}
+
+.drone-image {
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.drone-text h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin: 10px 0 20px;
+}
+
+.drone-text p {
+  font-size: 1.05rem;
+  color: #475569;
+}
