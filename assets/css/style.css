@@ -371,6 +371,63 @@ main {
 }
 
 /* -------------------- */
+/*     Para CELULAR  */
+/* -------------------- */
+
+
+.menu-toggle {
+  display: none;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .navbar {
+    flex-wrap: wrap;
+    padding: 14px 20px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-links li {
+    width: 100%;
+  }
+
+  .nav-links a {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .brand-name {
+    font-size: 1rem;
+  }
+
+  .logo img {
+    height: 40px;
+  }
+}
+
+/* -------------------- */
 /*     Pequeño arreglo  */
 /* -------------------- */
 
