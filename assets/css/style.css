@@ -110,6 +110,21 @@ body {
   font-weight: bold;
 }
 
+.hero-buttons {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.boton-outline {
+  padding: 12px 20px;
+  border: 2px solid white;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
 main {
   max-width: 900px;
   margin: 30px auto;
